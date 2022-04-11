@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple registration form</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="/assets/images/fav.png" sizes="16x16" type="image/svg">
+    <meta name="theme-color" content="#7952b3">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body class="text-center">
+<main class="form-signin">
+    <form id="form" class="show" name="registration">
+        <img class="mb-4" src="/assets/images/bootstrap-logo.svg" alt="" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+
+        <div class="form-floating">
+            <input id="first-name" type="text" class="first-name form-control" name="fname" placeholder="John">
+            <label for="first-name">First Name</label>
+        </div>
+
+        <div class="form-floating">
+            <input id="last-name" type="text" class="last-name form-control" name="lname" placeholder="Dow">
+            <label for="last-name">Last Name</label>
+        </div>
+
+        <div class="form-floating">
+            <input id="email" type="email" class="email form-control" name="email" placeholder="name@example.com">
+            <label for="email">Email address</label>
+        </div>
+        <div class="form-floating">
+            <input id="password" type="password" class="password form-control" name="password" placeholder="Password">
+            <label for="password">Password</label>
+        </div>
+        <div class="form-floating">
+            <input id="repeat-password" type="password" class="repeat-password form-control" name="rpassword"
+                   placeholder="Password">
+            <label for="repeat-password">Repeat password</label>
+        </div>
+        <div class="checkbox mt-3 mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="w-100 submit btn btn-lg btn-primary" type="button">Sign up</button>
+    </form>
+
+    <div class="error error-messages">
+        <p class="error error-title">Registration error:</p>
+        <p class="error error-user">- User with this email already exists</p>
+        <p class="error error-pass">- Passwords are not the same</p>
+        <p class="error error-email">- Email is not a valid email address</p>
+    </div>
+
+    <p class="success text-center">Thanks for registration !</p>
+
+    <p class="mt-5 mb-3 text-muted">&copy; Registration Form Demo 2022</p>
+</main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="assets/js/script.js"></script>
+</html>

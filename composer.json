@@ -1,0 +1,22 @@
+{
+    "name": "maxim/test-php-registration",
+    "description": "Simple form validation demo",
+    "authors": [
+        {
+            "name": "Maxim Maslov",
+            "email": "maxim.maslov.kd@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+          "src/classes"
+        ],
+        "psr-4": {
+            "RegForm\\": "src/classes"
+        }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.4",
+        "phpunit/phpunit": "^9"
+    }
+}
